@@ -2,7 +2,7 @@ name: Meetup FIAP
 on: [push, pull_request]
 jobs:
   devsecops:
-    runs-on: linux-latest
+    runs-on: ubunto-latest
     steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
@@ -12,7 +12,7 @@ jobs:
         with:
            command: monitor
   zap:
-      runs-on: linux-latest
+      runs-on: ubunto-latest
       steps:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.10.0
