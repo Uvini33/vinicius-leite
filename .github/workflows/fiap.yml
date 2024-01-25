@@ -12,7 +12,7 @@ jobs:
         with:
            command: monitor
   zap:
-      runs-on: ubunto-latest
+      runs-on: windows-latest
       steps:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.10.0
